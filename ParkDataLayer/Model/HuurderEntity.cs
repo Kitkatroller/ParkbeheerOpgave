@@ -7,6 +7,7 @@ namespace ParkDataLayer.Model
         [Key]
         public int Id { get; set; }
         [Required]
+        [MaxLength(100)]
         public string Naam { get; set; }
                 
         public virtual ContactgegevensEntity Contactgegevens { get; set; }

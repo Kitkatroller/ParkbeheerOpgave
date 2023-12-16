@@ -10,8 +10,11 @@ namespace ParkDataLayer.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
+        [MaxLength(250)]
         public string Straat { get; set; }
+        [Required]
         public int Nr { get; set; }
+        [Required]
         public bool Actief { get; set; }
                 
         public string ParkId { get; set; }

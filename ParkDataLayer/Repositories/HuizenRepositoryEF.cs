@@ -53,7 +53,7 @@ public class HuizenRepositoryEF : IHuizenRepository
     {
         var huisEntity = HuisMapper.ToEntity(huis);
 
-        if (_context.Parken.Find(huisEntity.Park.Id) != null)//Search if park is already created, if so use that park instead of creating a new one
+        if (_context.Parken.Find(huisEntity.Park.Id) != null)
         {
             huisEntity.Park = _context.Parken.Find(huisEntity.Park.Id);
         }

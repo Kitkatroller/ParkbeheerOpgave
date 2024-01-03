@@ -14,7 +14,6 @@ namespace ParkDataLayer.Mappers
         {
             if (entity == null) return null;
 
-            // Assuming Contactgegevens domain model has a constructor or properties to set
             return new Contactgegevens(entity.Email, entity.Tel, entity.Adres);
         }
 
